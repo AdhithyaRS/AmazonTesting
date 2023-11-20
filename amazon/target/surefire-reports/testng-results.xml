@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-20T11:33:27 IST" name="CombinedSuites" finished-at="2023-11-20T11:33:27 IST" duration-ms="0">
+  <suite started-at="2023-11-20T12:49:22 IST" name="CombinedSuites" finished-at="2023-11-20T12:49:22 IST" duration-ms="0">
     <groups>
     </groups>
   </suite> <!-- CombinedSuites -->
-  <suite started-at="2023-11-20T11:33:08 IST" name="MyFIUSuite" finished-at="2023-11-20T11:33:27 IST" duration-ms="19427">
+  <suite started-at="2023-11-20T12:48:59 IST" name="MyFIUSuite" finished-at="2023-11-20T12:49:22 IST" duration-ms="22974">
     <groups>
     </groups>
-    <test started-at="2023-11-20T11:33:08 IST" name="FunctionalTests" finished-at="2023-11-20T11:33:27 IST" duration-ms="19427">
+    <test started-at="2023-11-20T12:48:59 IST" name="FunctionalTests" finished-at="2023-11-20T12:49:22 IST" duration-ms="22974">
       <class name="com.testing.amazon.tests.functional.SignUpTest">
-        <test-method is-config="true" signature="setUpTestData()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@61e3cf4d]" started-at="2023-11-20T11:33:08 IST" name="setUpTestData" finished-at="2023-11-20T11:33:08 IST" duration-ms="41" status="PASS">
+        <test-method is-config="true" signature="setUpTestData()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@627d8516]" started-at="2023-11-20T12:48:59 IST" name="setUpTestData" finished-at="2023-11-20T12:48:59 IST" duration-ms="32" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTestData -->
-        <test-method is-config="true" signature="setUpBrowserTest(java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@61e3cf4d]" started-at="2023-11-20T11:33:08 IST" name="setUpBrowserTest" finished-at="2023-11-20T11:33:20 IST" duration-ms="11914" status="PASS">
+        <test-method is-config="true" signature="setUpBrowserTest(java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@627d8516]" started-at="2023-11-20T12:49:00 IST" name="setUpBrowserTest" finished-at="2023-11-20T12:49:10 IST" duration-ms="10602" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,11 +26,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBrowserTest -->
-        <test-method is-config="true" signature="setUpSignUpPage()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@61e3cf4d]" started-at="2023-11-20T11:33:20 IST" name="setUpSignUpPage" finished-at="2023-11-20T11:33:25 IST" duration-ms="5118" status="PASS">
+        <test-method is-config="true" signature="setUpSignUpPage()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@627d8516]" started-at="2023-11-20T12:49:10 IST" name="setUpSignUpPage" finished-at="2023-11-20T12:49:21 IST" duration-ms="10391" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpSignUpPage -->
-        <test-method signature="signUpWithEmptyCredTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@61e3cf4d]" started-at="2023-11-20T11:33:25 IST" name="signUpWithEmptyCredTest" description="Verify that the signUp process should not proceed to next step with empty cred and also checking that proper error message displayed." data-provider="signUpData" finished-at="2023-11-20T11:33:26 IST" duration-ms="1030" status="PASS">
+        <test-method signature="signUpWithEmptyCredTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@627d8516]" started-at="2023-11-20T12:49:21 IST" name="signUpWithEmptyCredTest" description="Verify that the signUp process should not proceed to next step with empty cred and also checking that proper error message displayed." data-provider="signUpData" finished-at="2023-11-20T12:49:21 IST" duration-ms="659" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -61,11 +61,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUpWithEmptyCredTest -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@61e3cf4d]" started-at="2023-11-20T11:33:26 IST" name="tearDownTest" finished-at="2023-11-20T11:33:27 IST" duration-ms="711" status="PASS">
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@627d8516]" started-at="2023-11-20T12:49:21 IST" name="tearDownTest" finished-at="2023-11-20T12:49:22 IST" duration-ms="810" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=signUpWithEmptyCredTest status=SUCCESS method=SignUpTest.signUpWithEmptyCredTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@61e3cf4d] output={null}]]]>
+                <![CDATA[[TestResult name=signUpWithEmptyCredTest status=SUCCESS method=SignUpTest.signUpWithEmptyCredTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@627d8516] output={null}]]]>
               </value>
             </param>
           </params>
