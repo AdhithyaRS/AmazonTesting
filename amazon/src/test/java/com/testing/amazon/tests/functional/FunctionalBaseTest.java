@@ -62,10 +62,10 @@ public class FunctionalBaseTest {
       }
   }
   
-  @Attachment(value = "Page screenshot", type = "image/png")
-  public byte[] captureScreenshot(String methodName) {
-	  System.out.println("Taking Screen shot");
-      return ((TakesScreenshot) this.driver).getScreenshotAs(OutputType.BYTES);
-  }
+//  @Attachment(value = "Page screenshot", type = "image/png")
+//  public byte[] captureScreenshot(String methodName) {
+//	  System.out.println("Taking Screen shot");
+//      return ((TakesScreenshot) this.driver).getScreenshotAs(OutputType.BYTES);
+//  }
 
 }

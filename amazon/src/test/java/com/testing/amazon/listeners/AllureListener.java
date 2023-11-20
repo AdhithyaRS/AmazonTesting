@@ -42,6 +42,7 @@ public class AllureListener implements ITestListener {
     public void onTestFailure(ITestResult result) {
     	String failureDetails = captureFailureDetails(result);
         attachToReport("Test Failure Details", failureDetails);
+        captureScreenshot();
     }
 
     // Capture test failure details
