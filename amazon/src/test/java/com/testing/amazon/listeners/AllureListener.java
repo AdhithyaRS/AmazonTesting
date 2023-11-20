@@ -3,8 +3,13 @@ package com.testing.amazon.listeners;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+
+import com.testing.amazon.pageObjectModel.BasePage;
+import com.testing.amazon.tests.functional.FunctionalBaseTest;
 
 import customInterfaces.ParameterLabel;
 import io.qameta.allure.Attachment;
@@ -17,6 +22,7 @@ public class AllureListener implements ITestListener {
     public void onTestSuccess(ITestResult result) {
 		String successDetails = captureSuccessDetails(result);
         attachToReport("Test Success Details", successDetails);
+        captureScreenshot();
     }
 
     // Capture test success details
@@ -28,6 +34,7 @@ public class AllureListener implements ITestListener {
         details.append("\nParameters:\n");
         details.append(captureParameters(result)).append("\n");
         System.out.println(details.toString());
+        
         return details.toString();
     }
 
@@ -48,6 +55,13 @@ public class AllureListener implements ITestListener {
         details.append(captureParameters(result)).append("\n");
         //System.out.println(details.toString());
         return details.toString();
+    }
+    @Attachment(value = "Page screenshot", type = "image/png")
+    public byte[] captureScreenshot() {
+  	  System.out.println("Taking Screen shot");
+  	  byte[] picture= FunctionalBaseTest.basePage.getScreenShot();
+        return picture;
+        //((TakesScreenshot) this.driver).getScreenshotAs(OutputType.BYTES);
     }
 
     public String captureParameters(ITestResult result) {

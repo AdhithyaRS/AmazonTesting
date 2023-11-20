@@ -3,6 +3,8 @@ package com.testing.amazon.pageObjectModel;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -87,6 +89,10 @@ public class BasePage extends PageOutline{
 	    System.out.println("Captcha Resolved "+getPageTitle());
 	    // After solving the captcha, continue the execution flow
 		
+	}
+	
+	public byte[] getScreenShot() {
+		return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 	}
 
 }

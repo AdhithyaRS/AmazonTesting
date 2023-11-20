@@ -62,6 +62,7 @@ public class SignUpTest extends FunctionalBaseTest{
 		signUpPage = page.getInstance(SignUpPage.class);
         // Navigate to the sign-up page or set up any preconditions specific to sign-up
 		signUpPage.navigateToSignUp();
+		basePage = signUpPage;
     }
 	
 	public boolean isSignUpPageLoaded() {

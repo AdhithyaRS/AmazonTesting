@@ -19,7 +19,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 
 public class FunctionalBaseTest {
-	
+	public static BasePage basePage;
 	public WebDriver driver;
 	public PageOutline page;
 
@@ -53,10 +53,10 @@ public class FunctionalBaseTest {
 
   @AfterMethod
   public void tearDownTest(ITestResult result) {
-	  if (result.getStatus() == ITestResult.FAILURE || result.getStatus() == ITestResult.SUCCESS ) {
-		  System.out.println("In tear down method");
-          captureScreenshot(result.getMethod().getMethodName());
-      }
+//	  if (result.getStatus() == ITestResult.FAILURE || result.getStatus() == ITestResult.SUCCESS ) {
+//		  System.out.println("In tear down method");
+//          captureScreenshot(result.getMethod().getMethodName());
+//      }
 	  if (driver != null) {
           driver.quit();
       }
