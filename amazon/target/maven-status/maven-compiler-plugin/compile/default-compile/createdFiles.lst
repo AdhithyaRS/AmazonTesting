@@ -1,0 +1,5 @@
+com\testing\amazon\pageObjectModel\PageOutline.class
+com\testing\amazon\App.class
+com\testing\amazon\pageObjectModel\BasePage.class
+com\testing\amazon\pageObjectModel\SignInPage.class
+com\testing\amazon\pageObjectModel\SignUpPage.class

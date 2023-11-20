@@ -1,0 +1,5 @@
+com\testing\amazon\tests\functional\SignUpTest.class
+com\testing\amazon\listeners\AllureListener.class
+com\testing\amazon\tests\functional\FunctionalBaseTest.class
+customInterfaces\ParameterLabel.class
+com\testing\amazon\tests\functional\SignInTest.class

@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="11" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-19T16:08:42 IST" name="CombinedSuites" finished-at="2023-11-19T16:08:42 IST" duration-ms="0">
+    <groups>
+    </groups>
+  </suite> <!-- CombinedSuites -->
+  <suite started-at="2023-11-19T16:01:44 IST" name="MyFIUSuite" finished-at="2023-11-19T16:08:42 IST" duration-ms="417686">
+    <groups>
+    </groups>
+    <test started-at="2023-11-19T16:01:44 IST" name="FunctionalTests" finished-at="2023-11-19T16:08:42 IST" duration-ms="417686">
+      <class name="com.testing.amazon.tests.functional.SignUpTest">
+        <test-method is-config="true" signature="setUpTestData()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:01:44 IST" name="setUpTestData" finished-at="2023-11-19T16:01:44 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTestData -->
+        <test-method is-config="true" signature="setUpBrowserTest(java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:01:44 IST" name="setUpBrowserTest" finished-at="2023-11-19T16:01:55 IST" duration-ms="10264" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowserTest -->
+        <test-method is-config="true" signature="setUpSignUpPage()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:01:55 IST" name="setUpSignUpPage" finished-at="2023-11-19T16:01:57 IST" duration-ms="2684" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSignUpPage -->
+        <test-method signature="signUpWithEmptyCredTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:01:57 IST" name="signUpWithEmptyCredTest" description="Verify that the signUp process should not proceed to next step with empty cred and also checking that proper error message displayed." data-provider="signUpData" finished-at="2023-11-19T16:01:58 IST" duration-ms="382" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[signUpWithEmptyCredTest]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpWithEmptyCredTest -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:01:58 IST" name="tearDownTest" finished-at="2023-11-19T16:01:58 IST" duration-ms="411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setUpBrowserTest(java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:01:58 IST" name="setUpBrowserTest" finished-at="2023-11-19T16:02:07 IST" duration-ms="9141" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowserTest -->
+        <test-method is-config="true" signature="setUpSignUpPage()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:02:07 IST" name="setUpSignUpPage" finished-at="2023-11-19T16:02:10 IST" duration-ms="2518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSignUpPage -->
+        <test-method signature="signUpWithInvalidEmailTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:02:10 IST" name="signUpWithInvalidEmailTest" description="Verify that the signUp process should not proceed to next step with invalid email-id and also checking that proper error message displayed." data-provider="signUpData" finished-at="2023-11-19T16:02:10 IST" duration-ms="389" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Abinaya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4545df]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[signUpWithInvalidEmailTest]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpWithInvalidEmailTest -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:02:10 IST" name="tearDownTest" finished-at="2023-11-19T16:02:11 IST" duration-ms="488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setUpBrowserTest(java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:02:11 IST" name="setUpBrowserTest" finished-at="2023-11-19T16:02:20 IST" duration-ms="9255" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowserTest -->
+        <test-method is-config="true" signature="setUpSignUpPage()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:02:20 IST" name="setUpSignUpPage" finished-at="2023-11-19T16:02:23 IST" duration-ms="2540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSignUpPage -->
+        <test-method signature="signUpWithInvalidEmailTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:02:23 IST" name="signUpWithInvalidEmailTest" description="Verify that the signUp process should not proceed to next step with invalid email-id and also checking that proper error message displayed." data-provider="signUpData" finished-at="2023-11-19T16:02:23 IST" duration-ms="386" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Abinaya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid_email.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[signUpWithInvalidEmailTest]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpWithInvalidEmailTest -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:02:23 IST" name="tearDownTest" finished-at="2023-11-19T16:02:23 IST" duration-ms="443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setUpBrowserTest(java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:02:23 IST" name="setUpBrowserTest" finished-at="2023-11-19T16:02:32 IST" duration-ms="8856" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowserTest -->
+        <test-method is-config="true" signature="setUpSignUpPage()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:02:32 IST" name="setUpSignUpPage" finished-at="2023-11-19T16:02:35 IST" duration-ms="2492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSignUpPage -->
+        <test-method signature="signUpWithInvalidEmailTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:02:35 IST" name="signUpWithInvalidEmailTest" description="Verify that the signUp process should not proceed to next step with invalid email-id and also checking that proper error message displayed." data-provider="signUpData" finished-at="2023-11-19T16:02:35 IST" duration-ms="386" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Abinaya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[@invalidemail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[signUpWithInvalidEmailTest]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpWithInvalidEmailTest -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:02:35 IST" name="tearDownTest" finished-at="2023-11-19T16:02:36 IST" duration-ms="453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setUpBrowserTest(java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:02:36 IST" name="setUpBrowserTest" finished-at="2023-11-19T16:02:45 IST" duration-ms="9353" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowserTest -->
+        <test-method is-config="true" signature="setUpSignUpPage()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:02:45 IST" name="setUpSignUpPage" finished-at="2023-11-19T16:02:47 IST" duration-ms="2244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSignUpPage -->
+        <test-method signature="signUpWithInvalidEmailTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:02:47 IST" name="signUpWithInvalidEmailTest" description="Verify that the signUp process should not proceed to next step with invalid email-id and also checking that proper error message displayed." data-provider="signUpData" finished-at="2023-11-19T16:02:48 IST" duration-ms="511" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Abinaya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid@domain.]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[signUpWithInvalidEmailTest]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpWithInvalidEmailTest -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:02:48 IST" name="tearDownTest" finished-at="2023-11-19T16:02:48 IST" duration-ms="431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setUpBrowserTest(java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:02:48 IST" name="setUpBrowserTest" finished-at="2023-11-19T16:02:58 IST" duration-ms="9377" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowserTest -->
+        <test-method is-config="true" signature="setUpSignUpPage()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:02:58 IST" name="setUpSignUpPage" finished-at="2023-11-19T16:03:00 IST" duration-ms="2590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSignUpPage -->
+        <test-method signature="signUpWithInvalidPasswordCheckTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:03:00 IST" name="signUpWithInvalidPasswordCheckTest" description="Verify that the signUp process should not proceed to next step with invalid re-enter password and also checking that proper error message displayed." data-provider="signUpData" finished-at="2023-11-19T16:03:01 IST" duration-ms="370" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Goodwill]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[tamil@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123456d]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[123456ds]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[signUpWithInvalidPasswordCheckTest]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpWithInvalidPasswordCheckTest -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:03:01 IST" name="tearDownTest" finished-at="2023-11-19T16:03:01 IST" duration-ms="439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setUpBrowserTest(java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:03:01 IST" name="setUpBrowserTest" finished-at="2023-11-19T16:03:11 IST" duration-ms="9651" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowserTest -->
+        <test-method is-config="true" signature="setUpSignUpPage()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:03:11 IST" name="setUpSignUpPage" finished-at="2023-11-19T16:03:13 IST" duration-ms="2091" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSignUpPage -->
+        <test-method signature="signUpWithInvalidPasswordCheckTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:03:13 IST" name="signUpWithInvalidPasswordCheckTest" description="Verify that the signUp process should not proceed to next step with invalid re-enter password and also checking that proper error message displayed." data-provider="signUpData" finished-at="2023-11-19T16:03:13 IST" duration-ms="372" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Goodwill]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[tamil@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11456dcv]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[11456sdcv]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[signUpWithInvalidPasswordCheckTest]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpWithInvalidPasswordCheckTest -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:03:13 IST" name="tearDownTest" finished-at="2023-11-19T16:03:14 IST" duration-ms="494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setUpBrowserTest(java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:03:14 IST" name="setUpBrowserTest" finished-at="2023-11-19T16:03:23 IST" duration-ms="9187" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowserTest -->
+        <test-method is-config="true" signature="setUpSignUpPage()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:03:23 IST" name="setUpSignUpPage" finished-at="2023-11-19T16:03:25 IST" duration-ms="2154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSignUpPage -->
+        <test-method signature="signUpWithInvalidPasswordTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:03:25 IST" name="signUpWithInvalidPasswordTest" description="Verify that the signUp process should not proceed to next step with invalid password and also checking that proper error message displayed." data-provider="signUpData" finished-at="2023-11-19T16:03:25 IST" duration-ms="380" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Goodwill]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[tamil@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[sd]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[signUpWithInvalidPasswordTest]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpWithInvalidPasswordTest -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:03:25 IST" name="tearDownTest" finished-at="2023-11-19T16:03:26 IST" duration-ms="498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setUpBrowserTest(java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:03:26 IST" name="setUpBrowserTest" finished-at="2023-11-19T16:03:36 IST" duration-ms="9645" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowserTest -->
+        <test-method is-config="true" signature="setUpSignUpPage()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:03:36 IST" name="setUpSignUpPage" finished-at="2023-11-19T16:03:38 IST" duration-ms="2101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSignUpPage -->
+        <test-method signature="signUpWithInvalidPasswordTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:03:38 IST" name="signUpWithInvalidPasswordTest" description="Verify that the signUp process should not proceed to next step with invalid password and also checking that proper error message displayed." data-provider="signUpData" finished-at="2023-11-19T16:03:38 IST" duration-ms="352" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Goodwill]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[tamil@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[signUpWithInvalidPasswordTest]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpWithInvalidPasswordTest -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:03:38 IST" name="tearDownTest" finished-at="2023-11-19T16:03:38 IST" duration-ms="384" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setUpBrowserTest(java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:03:38 IST" name="setUpBrowserTest" finished-at="2023-11-19T16:03:47 IST" duration-ms="9024" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowserTest -->
+        <test-method is-config="true" signature="setUpSignUpPage()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:03:47 IST" name="setUpSignUpPage" finished-at="2023-11-19T16:03:50 IST" duration-ms="2910" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSignUpPage -->
+        <test-method signature="signUpWithInvalidPhoneNumberTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:03:50 IST" name="signUpWithInvalidPhoneNumberTest" description="Verify that the signUp process should not proceed to next step with invalid phone Number and also checking that proper error message displayed." data-provider="signUpData" finished-at="2023-11-19T16:04:06 IST" duration-ms="15639" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Adhithya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[+91-8485465416531]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[signUpWithInvalidPhoneNumberTest]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Going to next step of signUp after entering invalid Mobile number. expected [Please enter a valid mobile phone number with area code.] but found [Amazon Phone Verification]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Going to next step of signUp after entering invalid Mobile number. expected [Please enter a valid mobile phone number with area code.] but found [Amazon Phone Verification]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at com.testing.amazon.tests.functional.SignUpTest.signUpWithInvalidPhoneNumberTest(SignUpTest.java:132)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1275)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpWithInvalidPhoneNumberTest -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:04:06 IST" name="tearDownTest" finished-at="2023-11-19T16:04:07 IST" duration-ms="626" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setUpBrowserTest(java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:04:07 IST" name="setUpBrowserTest" finished-at="2023-11-19T16:04:16 IST" duration-ms="8982" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowserTest -->
+        <test-method is-config="true" signature="setUpSignUpPage()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:04:16 IST" name="setUpSignUpPage" finished-at="2023-11-19T16:04:18 IST" duration-ms="2154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSignUpPage -->
+        <test-method signature="signUpWithInvalidPhoneNumberTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:04:18 IST" name="signUpWithInvalidPhoneNumberTest" description="Verify that the signUp process should not proceed to next step with invalid phone Number and also checking that proper error message displayed." data-provider="signUpData" finished-at="2023-11-19T16:06:57 IST" duration-ms="159231" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Abinaya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[signUpWithInvalidPhoneNumberTest]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpWithInvalidPhoneNumberTest -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:06:57 IST" name="tearDownTest" finished-at="2023-11-19T16:06:58 IST" duration-ms="572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setUpBrowserTest(java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:06:58 IST" name="setUpBrowserTest" finished-at="2023-11-19T16:07:07 IST" duration-ms="9725" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowserTest -->
+        <test-method is-config="true" signature="setUpSignUpPage()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:07:07 IST" name="setUpSignUpPage" finished-at="2023-11-19T16:07:09 IST" duration-ms="2140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSignUpPage -->
+        <test-method signature="signUpWithInvalidPhoneNumberTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:07:09 IST" name="signUpWithInvalidPhoneNumberTest" description="Verify that the signUp process should not proceed to next step with invalid phone Number and also checking that proper error message displayed." data-provider="signUpData" finished-at="2023-11-19T16:07:24 IST" duration-ms="14688" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Abinaya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[100000000000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[signUpWithInvalidPhoneNumberTest]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpWithInvalidPhoneNumberTest -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:07:24 IST" name="tearDownTest" finished-at="2023-11-19T16:07:25 IST" duration-ms="557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setUpBrowserTest(java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:07:25 IST" name="setUpBrowserTest" finished-at="2023-11-19T16:07:34 IST" duration-ms="9203" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowserTest -->
+        <test-method is-config="true" signature="setUpSignUpPage()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:07:34 IST" name="setUpSignUpPage" finished-at="2023-11-19T16:07:36 IST" duration-ms="2253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSignUpPage -->
+        <test-method signature="signUpWithInvalidUserNameTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:07:36 IST" name="signUpWithInvalidUserNameTest" description="Verify that the signUp process should not proceed to next step with invalid user name." data-provider="signUpData" finished-at="2023-11-19T16:07:55 IST" duration-ms="18827" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[…]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[+15736484306]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[signUpWithInvalidUserNameTest]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Going to next step of signUp after entering invalid user name. did not expect [Amazon Phone Verification] but found [Amazon Phone Verification]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Going to next step of signUp after entering invalid user name. did not expect [Amazon Phone Verification] but found [Amazon Phone Verification]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failEquals(Assert.java:1582)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:157)
+at org.testng.Assert.assertNotEquals(Assert.java:2198)
+at com.testing.amazon.tests.functional.SignUpTest.signUpWithInvalidUserNameTest(SignUpTest.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1275)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpWithInvalidUserNameTest -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:07:55 IST" name="tearDownTest" finished-at="2023-11-19T16:07:56 IST" duration-ms="628" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setUpBrowserTest(java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:07:56 IST" name="setUpBrowserTest" finished-at="2023-11-19T16:08:06 IST" duration-ms="10528" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowserTest -->
+        <test-method is-config="true" signature="setUpSignUpPage()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:08:06 IST" name="setUpSignUpPage" finished-at="2023-11-19T16:08:08 IST" duration-ms="2258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSignUpPage -->
+        <test-method signature="signUpWithInvalidUserNameTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:08:08 IST" name="signUpWithInvalidUserNameTest" description="Verify that the signUp process should not proceed to next step with invalid user name." data-provider="signUpData" finished-at="2023-11-19T16:08:41 IST" duration-ms="32894" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[+15736484306]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[signUpWithInvalidUserNameTest]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Going to next step of signUp after entering invalid user name. did not expect [Amazon Phone Verification] but found [Amazon Phone Verification]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Going to next step of signUp after entering invalid user name. did not expect [Amazon Phone Verification] but found [Amazon Phone Verification]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failEquals(Assert.java:1582)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:157)
+at org.testng.Assert.assertNotEquals(Assert.java:2198)
+at com.testing.amazon.tests.functional.SignUpTest.signUpWithInvalidUserNameTest(SignUpTest.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1275)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpWithInvalidUserNameTest -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.testing.amazon.tests.functional.SignUpTest@4aa21f9d]" started-at="2023-11-19T16:08:41 IST" name="tearDownTest" finished-at="2023-11-19T16:08:42 IST" duration-ms="567" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- com.testing.amazon.tests.functional.SignUpTest -->
+    </test> <!-- FunctionalTests -->
+  </suite> <!-- MyFIUSuite -->
+</testng-results>

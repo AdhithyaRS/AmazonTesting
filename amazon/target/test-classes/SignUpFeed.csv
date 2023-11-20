@@ -1,0 +1,15 @@
+﻿UserName,PhoneNumber,Password,,TestMethodName
+…,+15736484306,123456,123456,signUpWithInvalidUserNameTest
+123456,+15736484306,123456,123456,signUpWithInvalidUserNameTest
+Adhithya,+91-8485465416531,123456,123456,signUpWithInvalidPhoneNumberTest
+Abinaya,11,123456,123456,signUpWithInvalidPhoneNumberTest
+Abinaya,100000000000,123456,123456,signUpWithInvalidPhoneNumberTest
+Abinaya,4545df,123456,123456,signUpWithInvalidEmailTest
+Abinaya,invalid_email.com,123456,123456,signUpWithInvalidEmailTest
+Abinaya,@invalidemail.com,123456,123456,signUpWithInvalidEmailTest
+Abinaya,invalid@domain.,123456,123456,signUpWithInvalidEmailTest
+Goodwill,tamil@gmail.com,sd,,signUpWithInvalidPasswordTest
+Goodwill,tamil@gmail.com,123,,signUpWithInvalidPasswordTest
+Goodwill,tamil@gmail.com,123456d,123456ds,signUpWithInvalidPasswordCheckTest
+Goodwill,tamil@gmail.com,11456dcv,11456sdcv,signUpWithInvalidPasswordCheckTest
+,,,,signUpWithEmptyCredTest
