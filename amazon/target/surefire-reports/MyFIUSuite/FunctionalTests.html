@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>FunctionalTests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>12/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 20 13:26:25 IST 2023</td>
+<td>Started on:</td><td>Tue Nov 21 12:54:23 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>380 seconds (380014 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (455 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,27 +76,21 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.testing.amazon.tests.functional.SignUpTest.signUpWithInvalidPhoneNumberTest()'><b>signUpWithInvalidPhoneNumberTest</b><br>Test class: com.testing.amazon.tests.functional.SignUpTest<br>Test method: Verify that the signUp process should not proceed to next step with invalid phone Number and also checking that proper error message displayed.<br>Parameters: Adhithya, +91-8485465416531, 123456, 123456, signUpWithInvalidPhoneNumberTest</td>
-<td><div><pre>java.lang.AssertionError: Going to next step of signUp after entering invalid Mobile number. expected [Please enter a valid mobile phone number with area code.] but found [Amazon Phone Verification]
-	at com.testing.amazon.tests.functional.SignUpTest.signUpWithInvalidPhoneNumberTest(SignUpTest.java:137)
+<td title='com.testing.amazon.tests.functional.SignInTest.signInWithInvalidCredTest()'><b>signInWithInvalidCredTest</b><br>Test class: com.testing.amazon.tests.functional.SignInTest<br>Test method: Verify that the proper alert shown with invalid phone number or email-id.</td>
+<td><div><pre>java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;specificTestData&quot; is null
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1660678061", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1660678061'><pre>java.lang.AssertionError: Going to next step of signUp after entering invalid Mobile number. expected [Please enter a valid mobile phone number with area code.] but found [Amazon Phone Verification]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at com.testing.amazon.tests.functional.SignUpTest.signUpWithInvalidPhoneNumberTest(SignUpTest.java:137)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+Caused by: java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;specificTestData&quot; is null
+	at com.testing.amazon.tests.functional.SignInTest.dp(SignInTest.java:85)
+	... 30 more
+... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace351965871", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace351965871'><pre>java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;specificTestData&quot; is null
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:57)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:157)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:803)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:911)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -121,126 +115,19 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-</pre></div></td>
-<td>15</td>
-<td>com.testing.amazon.tests.functional.SignUpTest@24361cfc</td></tr>
-<tr>
-<td title='com.testing.amazon.tests.functional.SignUpTest.signUpWithInvalidUserNameTest()'><b>signUpWithInvalidUserNameTest</b><br>Test class: com.testing.amazon.tests.functional.SignUpTest<br>Test method: Verify that the signUp process should not proceed to next step with invalid user name.<br>Parameters: 123456, +15736484306, 123456, 123456, signUpWithInvalidUserNameTest</td>
-<td><div><pre>java.lang.AssertionError: Going to next step of signUp after entering invalid user name. did not expect [Amazon Phone Verification] but found [Amazon Phone Verification]
-	at com.testing.amazon.tests.functional.SignUpTest.signUpWithInvalidUserNameTest(SignUpTest.java:107)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace74815209", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace74815209'><pre>java.lang.AssertionError: Going to next step of signUp after entering invalid user name. did not expect [Amazon Phone Verification] but found [Amazon Phone Verification]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failEquals(Assert.java:1582)
-	at org.testng.Assert.assertNotEqualsImpl(Assert.java:157)
-	at org.testng.Assert.assertNotEquals(Assert.java:2198)
-	at com.testing.amazon.tests.functional.SignUpTest.signUpWithInvalidUserNameTest(SignUpTest.java:107)
+Caused by: java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;specificTestData&quot; is null
+	at com.testing.amazon.tests.functional.SignInTest.dp(SignInTest.java:85)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1275)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
+	... 30 more
 </pre></div></td>
-<td>20</td>
-<td>com.testing.amazon.tests.functional.SignUpTest@24361cfc</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.testing.amazon.tests.functional.SignUpTest.signUpWithInvalidPhoneNumberTest()'><b>signUpWithInvalidPhoneNumberTest</b><br>Test class: com.testing.amazon.tests.functional.SignUpTest<br>Test method: Verify that the signUp process should not proceed to next step with invalid phone Number and also checking that proper error message displayed.<br>Parameters: Abinaya, 11, 123456, 123456, signUpWithInvalidPhoneNumberTest</td>
-<td></td>
-<td>25</td>
-<td>com.testing.amazon.tests.functional.SignUpTest@24361cfc</td></tr>
-<tr>
-<td title='com.testing.amazon.tests.functional.SignUpTest.signUpWithInvalidPhoneNumberTest()'><b>signUpWithInvalidPhoneNumberTest</b><br>Test class: com.testing.amazon.tests.functional.SignUpTest<br>Test method: Verify that the signUp process should not proceed to next step with invalid phone Number and also checking that proper error message displayed.<br>Parameters: Abinaya, 100000000000, 123456, 123456, signUpWithInvalidPhoneNumberTest</td>
-<td></td>
-<td>89</td>
-<td>com.testing.amazon.tests.functional.SignUpTest@24361cfc</td></tr>
-<tr>
-<td title='com.testing.amazon.tests.functional.SignUpTest.signUpWithInvalidEmailTest()'><b>signUpWithInvalidEmailTest</b><br>Test class: com.testing.amazon.tests.functional.SignUpTest<br>Test method: Verify that the signUp process should not proceed to next step with invalid email-id and also checking that proper error message displayed.<br>Parameters: Abinaya, @invalidemail.com, 123456, 123456, signUpWithInvalidEmailTest</td>
-<td></td>
 <td>0</td>
-<td>com.testing.amazon.tests.functional.SignUpTest@24361cfc</td></tr>
-<tr>
-<td title='com.testing.amazon.tests.functional.SignUpTest.signUpWithInvalidPasswordCheckTest()'><b>signUpWithInvalidPasswordCheckTest</b><br>Test class: com.testing.amazon.tests.functional.SignUpTest<br>Test method: Verify that the signUp process should not proceed to next step with invalid re-enter password and also checking that proper error message displayed.<br>Parameters: Goodwill, tamil@gmail.com, 11456dcv, 11456sdcv, signUpWithInvalidPasswordCheckTest</td>
-<td></td>
-<td>0</td>
-<td>com.testing.amazon.tests.functional.SignUpTest@24361cfc</td></tr>
-<tr>
-<td title='com.testing.amazon.tests.functional.SignUpTest.signUpWithInvalidEmailTest()'><b>signUpWithInvalidEmailTest</b><br>Test class: com.testing.amazon.tests.functional.SignUpTest<br>Test method: Verify that the signUp process should not proceed to next step with invalid email-id and also checking that proper error message displayed.<br>Parameters: Abinaya, invalid@domain., 123456, 123456, signUpWithInvalidEmailTest</td>
-<td></td>
-<td>0</td>
-<td>com.testing.amazon.tests.functional.SignUpTest@24361cfc</td></tr>
-<tr>
-<td title='com.testing.amazon.tests.functional.SignUpTest.signUpWithInvalidPasswordCheckTest()'><b>signUpWithInvalidPasswordCheckTest</b><br>Test class: com.testing.amazon.tests.functional.SignUpTest<br>Test method: Verify that the signUp process should not proceed to next step with invalid re-enter password and also checking that proper error message displayed.<br>Parameters: Goodwill, tamil@gmail.com, 123456d, 123456ds, signUpWithInvalidPasswordCheckTest</td>
-<td></td>
-<td>0</td>
-<td>com.testing.amazon.tests.functional.SignUpTest@24361cfc</td></tr>
-<tr>
-<td title='com.testing.amazon.tests.functional.SignUpTest.signUpWithInvalidUserNameTest()'><b>signUpWithInvalidUserNameTest</b><br>Test class: com.testing.amazon.tests.functional.SignUpTest<br>Test method: Verify that the signUp process should not proceed to next step with invalid user name.<br>Parameters: …, +15736484306, 123456, 123456, signUpWithInvalidUserNameTest</td>
-<td></td>
-<td>1</td>
-<td>com.testing.amazon.tests.functional.SignUpTest@24361cfc</td></tr>
-<tr>
-<td title='com.testing.amazon.tests.functional.SignUpTest.signUpWithInvalidPasswordTest()'><b>signUpWithInvalidPasswordTest</b><br>Test class: com.testing.amazon.tests.functional.SignUpTest<br>Test method: Verify that the signUp process should not proceed to next step with invalid password and also checking that proper error message displayed.<br>Parameters: Goodwill, tamil@gmail.com, 123, , signUpWithInvalidPasswordTest</td>
-<td></td>
-<td>0</td>
-<td>com.testing.amazon.tests.functional.SignUpTest@24361cfc</td></tr>
-<tr>
-<td title='com.testing.amazon.tests.functional.SignUpTest.signUpWithInvalidPasswordTest()'><b>signUpWithInvalidPasswordTest</b><br>Test class: com.testing.amazon.tests.functional.SignUpTest<br>Test method: Verify that the signUp process should not proceed to next step with invalid password and also checking that proper error message displayed.<br>Parameters: Goodwill, tamil@gmail.com, sd, , signUpWithInvalidPasswordTest</td>
-<td></td>
-<td>0</td>
-<td>com.testing.amazon.tests.functional.SignUpTest@24361cfc</td></tr>
-<tr>
-<td title='com.testing.amazon.tests.functional.SignUpTest.signUpWithEmptyCredTest()'><b>signUpWithEmptyCredTest</b><br>Test class: com.testing.amazon.tests.functional.SignUpTest<br>Test method: Verify that the signUp process should not proceed to next step with empty cred and also checking that proper error message displayed.<br>Parameters: , , , , signUpWithEmptyCredTest</td>
-<td></td>
-<td>0</td>
-<td>com.testing.amazon.tests.functional.SignUpTest@24361cfc</td></tr>
-<tr>
-<td title='com.testing.amazon.tests.functional.SignUpTest.signUpWithInvalidEmailTest()'><b>signUpWithInvalidEmailTest</b><br>Test class: com.testing.amazon.tests.functional.SignUpTest<br>Test method: Verify that the signUp process should not proceed to next step with invalid email-id and also checking that proper error message displayed.<br>Parameters: Abinaya, 4545df, 123456, 123456, signUpWithInvalidEmailTest</td>
-<td></td>
-<td>0</td>
-<td>com.testing.amazon.tests.functional.SignUpTest@24361cfc</td></tr>
-<tr>
-<td title='com.testing.amazon.tests.functional.SignUpTest.signUpWithInvalidEmailTest()'><b>signUpWithInvalidEmailTest</b><br>Test class: com.testing.amazon.tests.functional.SignUpTest<br>Test method: Verify that the signUp process should not proceed to next step with invalid email-id and also checking that proper error message displayed.<br>Parameters: Abinaya, invalid_email.com, 123456, 123456, signUpWithInvalidEmailTest</td>
-<td></td>
-<td>0</td>
-<td>com.testing.amazon.tests.functional.SignUpTest@24361cfc</td></tr>
+<td>com.testing.amazon.tests.functional.SignInTest@23202c31</td></tr>
 </table><p>
 </body>
 </html>

@@ -5,7 +5,7 @@
     	<parameter name="browser" value="chrome" />
         <classes>
             <class name="com.testing.amazon.tests.functional.SignUpTest" />
-            <!-- <class name="com.testing.amazon.tests.functional.SignInTest" /> -->
+            <class name="com.testing.amazon.tests.functional.SignInTest" />
             <!-- Add more functional test classes as needed -->
         </classes>
     </test>

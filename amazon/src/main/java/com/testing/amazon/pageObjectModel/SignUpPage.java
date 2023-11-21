@@ -25,12 +25,10 @@ public class SignUpPage extends BasePage{
 			getElement(By.id("createAccountSubmit")).click();
 			
 		} catch (NoSuchElementException e) {
-	        // Handle NoSuchElementException (element not found)
-	        e.printStackTrace();
-	    } catch (StaleElementReferenceException e) {
-	        // Handle StaleElementReferenceException (element is no longer attached to DOM)
+	        System.out.println("Element did not located");
 	        e.printStackTrace();
 	    } catch (Exception e) {
+	    	System.out.println("Unknown Exception, Please handle it");
 	        // Handle any other unexpected exceptions
 	        e.printStackTrace();
 	    }

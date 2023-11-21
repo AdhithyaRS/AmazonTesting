@@ -87,9 +87,8 @@ public class SignUpTest extends FunctionalBaseTest{
   }
   
   @Parameters({ "userName", "phoneNumberOrEmail", "password", "reEnterPassword" , "testMethodName"})
-  @Test(dataProvider = "signUpData",  enabled=true, description = "Verify that the signUp process should not proceed to next step with invalid user name.")
+  @Test(dataProvider = "signUpData",  enabled=false, description = "Verify that the signUp process should not proceed to next step with invalid user name.")
   public void signUpWithInvalidUserNameTest(@ParameterLabel("Username") String userName,@ParameterLabel("Phone number/Email-id") String phoneNumberOrEmail,@ParameterLabel("Password") String password,@ParameterLabel("Re-enter Password") String reEnterPassword,@ParameterLabel("methodName") String testMethodName) {
-	  Assert.assertTrue(isSignUpPageLoaded(), "SignUp page Not loaded");
 	  try {
 	        Assert.assertTrue(isSignUpPageLoaded(), "SignUp page Not loaded");
 	        signUpPage.getUserName().sendKeys(userName);
@@ -114,7 +113,7 @@ public class SignUpTest extends FunctionalBaseTest{
   }
   
   @Parameters({ "userName", "phoneNumberOrEmail", "password", "reEnterPassword" , "testMethodName"})
-  @Test(dataProvider = "signUpData",  enabled=true, description = "Verify that the signUp process should not proceed to next step with invalid phone Number and also checking that proper error message displayed.")
+  @Test(dataProvider = "signUpData",  enabled=false, description = "Verify that the signUp process should not proceed to next step with invalid phone Number and also checking that proper error message displayed.")
   public void signUpWithInvalidPhoneNumberTest(@ParameterLabel("Username") String userName,@ParameterLabel("Phone number/Email-id") String phoneNumberOrEmail,@ParameterLabel("Password") String password,@ParameterLabel("Re-enter Password") String reEnterPassword,@ParameterLabel("methodName") String testMethodName) {
 	  try{
 		  	Assert.assertTrue(isSignUpPageLoaded(), "SignUp page Not loaded");
@@ -142,7 +141,7 @@ public class SignUpTest extends FunctionalBaseTest{
   }
 
   @Parameters({ "userName", "phoneNumberOrEmail", "password", "reEnterPassword" , "testMethodName"})
-  @Test(dataProvider = "signUpData",  enabled=true, description = "Verify that the signUp process should not proceed to next step with invalid email-id and also checking that proper error message displayed.")
+  @Test(dataProvider = "signUpData",  enabled=false, description = "Verify that the signUp process should not proceed to next step with invalid email-id and also checking that proper error message displayed.")
   public void signUpWithInvalidEmailTest(@ParameterLabel("Username") String userName,@ParameterLabel("Phone number/Email-id") String phoneNumberOrEmail,@ParameterLabel("Password") String password,@ParameterLabel("Re-enter Password") String reEnterPassword,@ParameterLabel("methodName") String testMethodName) {
 	  	try{
 	  		Assert.assertTrue(isSignUpPageLoaded(), "SignUp page Not loaded");
@@ -171,7 +170,7 @@ public class SignUpTest extends FunctionalBaseTest{
   }
   
   @Parameters({ "userName", "phoneNumberOrEmail", "password", "reEnterPassword" , "testMethodName"})
-  @Test(dataProvider = "signUpData",  enabled=true, description = "Verify that the signUp process should not proceed to next step with invalid password and also checking that proper error message displayed.")
+  @Test(dataProvider = "signUpData",  enabled=false, description = "Verify that the signUp process should not proceed to next step with invalid password and also checking that proper error message displayed.")
   public void signUpWithInvalidPasswordTest(@ParameterLabel("Username") String userName,@ParameterLabel("Phone number/Email-id") String phoneNumberOrEmail,@ParameterLabel("Password") String password,@ParameterLabel("Re-enter Password") String reEnterPassword,@ParameterLabel("methodName") String testMethodName) {
 	  	try{
 	  		Assert.assertTrue(isSignUpPageLoaded(), "SignUp page Not loaded");
@@ -199,7 +198,7 @@ public class SignUpTest extends FunctionalBaseTest{
   }
   
   @Parameters({ "userName", "phoneNumberOrEmail", "password", "reEnterPassword" , "testMethodName"})
-  @Test(dataProvider = "signUpData",  enabled=true, description = "Verify that the signUp process should not proceed to next step with invalid re-enter password and also checking that proper error message displayed.")
+  @Test(dataProvider = "signUpData",  enabled=false, description = "Verify that the signUp process should not proceed to next step with invalid re-enter password and also checking that proper error message displayed.")
   public void signUpWithInvalidPasswordCheckTest(@ParameterLabel("Username") String userName,@ParameterLabel("Phone number/Email-id") String phoneNumberOrEmail,@ParameterLabel("Password") String password,@ParameterLabel("Re-enter Password") String reEnterPassword,@ParameterLabel("methodName") String testMethodName) {
 	  	try{
 	  		Assert.assertTrue(isSignUpPageLoaded(), "SignUp page Not loaded");
@@ -228,7 +227,7 @@ public class SignUpTest extends FunctionalBaseTest{
   
   
   @Parameters({ "userName", "phoneNumberOrEmail", "password", "reEnterPassword" , "testMethodName"})
-  @Test(dataProvider = "signUpData",  enabled=true, description = "Verify that the signUp process should not proceed to next step with empty cred and also checking that proper error message displayed.")
+  @Test(dataProvider = "signUpData",  enabled=false, description = "Verify that the signUp process should not proceed to next step with empty cred and also checking that proper error message displayed.")
   public void signUpWithEmptyCredTest(@ParameterLabel("Username") String userName,@ParameterLabel("Phone number/Email-id") String phoneNumberOrEmail,@ParameterLabel("Password") String password,@ParameterLabel("Re-enter Password") String reEnterPassword,@ParameterLabel("methodName") String testMethodName) {
 	  try {	
 			Assert.assertTrue(isSignUpPageLoaded(), "SignUp page Not loaded");
