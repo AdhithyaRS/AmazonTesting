@@ -1,0 +1,11 @@
+Test Method: signUpWithInvalidPasswordCheckTest
+Test Description: Verify that the signUp process should not proceed to next step with invalid re-enter password and also checking that proper error message displayed.
+Test Status: PASSED
+
+Parameters:
+Username: Goodwill
+Phone number/Email-id: tamil@gmail.com
+Password: 123456d
+Re-enter Password: 123456ds
+methodName: signUpWithInvalidPasswordCheckTest
+

@@ -1,0 +1,9 @@
+Test Method: signInWithInvalidCredTest
+Test Description: Verify that the proper alert shown with invalid phone number or email-id.
+Test Status: PASSED
+
+Parameters:
+Phone number/Email-id: 5465
+Password: 
+methodName: signInWithInvalidCredTest
+

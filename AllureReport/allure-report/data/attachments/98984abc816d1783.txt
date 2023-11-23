@@ -1,0 +1,10 @@
+Test Method: searchByCategoryTest
+Test Description: Verify that relavant search results shown for a product search.
+Test Status: PASSED
+
+Parameters:
+Search Keyword: Similac
+Search In Category: baby-products
+Confirm Brand in Search Result: similac
+methodName: searchByCategoryTest
+

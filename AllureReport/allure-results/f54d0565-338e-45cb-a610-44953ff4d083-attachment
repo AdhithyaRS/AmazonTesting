@@ -1,0 +1,10 @@
+Test Method: searchByCategoryTest
+Test Description: Verify that relavant search results shown for a product search.
+Test Status: PASSED
+
+Parameters:
+Search Keyword: Acer Laptops
+Search In Category: computers
+Confirm Brand in Search Result: acer
+methodName: searchByCategoryTest
+

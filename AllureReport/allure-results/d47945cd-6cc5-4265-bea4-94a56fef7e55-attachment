@@ -1,0 +1,10 @@
+Test Method: searchByCategoryTest
+Test Description: Verify that relavant search results shown for a product search.
+Test Status: PASSED
+
+Parameters:
+Search Keyword: Samsung S22 Ultra
+Search In Category: electronics
+Confirm Brand in Search Result: samsung
+methodName: searchByCategoryTest
+

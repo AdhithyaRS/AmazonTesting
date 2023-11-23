@@ -1,0 +1,9 @@
+Test Method: signInWithValidCredTest
+Test Description: Verify that the SignIn is successful with valid phone number and password.
+Test Status: PASSED
+
+Parameters:
+Phone number/Email-id: toadhi1509@gmail.com
+Password: Adhi@Adhi15
+methodName: signInWithValidCredTest
+
