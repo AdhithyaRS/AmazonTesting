@@ -1,6 +1,13 @@
-C:\Users\toadh\git\SeleniumTesting\AmazonTesting\amazon\src\test\java\com\testing\amazon\tests\functional\SignUpTest.java
-C:\Users\toadh\git\SeleniumTesting\AmazonTesting\amazon\src\test\java\com\testing\amazon\tests\functional\SignInTest.java
+C:\Users\toadh\git\SeleniumTesting\AmazonTesting\amazon\src\test\java\com\testing\amazon\tests\database\CRUDTest.java
+C:\Users\toadh\git\SeleniumTesting\AmazonTesting\amazon\src\test\java\com\testing\amazon\tests\integeration\LoginToBuyIntegrationTest.java
 C:\Users\toadh\git\SeleniumTesting\AmazonTesting\amazon\src\test\java\com\testing\amazon\tests\functional\FunctionalBaseTest.java
+C:\Users\toadh\git\SeleniumTesting\AmazonTesting\amazon\src\test\java\com\testing\amazon\tests\functional\SearchProductTest.java
+C:\Users\toadh\git\SeleniumTesting\AmazonTesting\amazon\src\test\java\com\testing\amazon\tests\functional\SignUpTest.java
+C:\Users\toadh\git\SeleniumTesting\AmazonTesting\amazon\src\test\java\com\testing\amazon\tests\BaseTest.java
+C:\Users\toadh\git\SeleniumTesting\AmazonTesting\amazon\src\test\java\com\testing\amazon\tests\functional\SignInTest.java
+C:\Users\toadh\git\SeleniumTesting\AmazonTesting\amazon\src\test\java\com\testing\amazon\listeners\AllureListenerDB.java
 C:\Users\toadh\git\SeleniumTesting\AmazonTesting\amazon\src\test\java\customInterfaces\ParameterLabel.java
 C:\Users\toadh\git\SeleniumTesting\AmazonTesting\amazon\src\test\java\com\testing\amazon\AppTest.java
 C:\Users\toadh\git\SeleniumTesting\AmazonTesting\amazon\src\test\java\com\testing\amazon\listeners\AllureListener.java
+C:\Users\toadh\git\SeleniumTesting\AmazonTesting\amazon\src\test\java\com\testing\amazon\tests\database\DatabaseBaseTest.java
+C:\Users\toadh\git\SeleniumTesting\AmazonTesting\amazon\src\test\java\com\testing\amazon\tests\integeration\IntegerationBaseTest.java

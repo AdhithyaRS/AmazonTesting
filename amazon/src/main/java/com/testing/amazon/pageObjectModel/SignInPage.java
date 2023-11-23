@@ -9,9 +9,10 @@ public class SignInPage extends BasePage{
 	private By goToSignInPage = By.id("nav-link-accountList-nav-line-1");
 	private By phoneNumber = By.id("ap_email");
 	private By signInContinueButton = By.id("continue");
+	private By password = By.id("ap_password");
+	private By signInSubmitButton = By.id("signInSubmit");
 
 	public SignInPage(WebDriver driver) {
-		
 		super(driver);
 		// TODO Auto-generated constructor stub
 	}
@@ -33,9 +34,16 @@ public class SignInPage extends BasePage{
 	public WebElement getPhoneNumber() {
 		return getElement(phoneNumber);
 	}
+	
+	public WebElement getPassword() {
+		return getElement(password);
+	}
 
 	public WebElement getSignInContinueButton() {
 		return getElement(signInContinueButton);
+	}
+	public WebElement getSignInSubmitButton() {
+		return getElement(signInSubmitButton);
 	}
 	
 	public WebElement getMissingPhoneNumberAlert() {
@@ -47,5 +55,10 @@ public class SignInPage extends BasePage{
 		}
 		return getElement(By.xpath("//div[@class='a-alert-content']//li/span"));
 	}
+
+	public WebElement isSignInSuccess() {
+		return getElement(By.id("nav-link-accountList-nav-line-1"));
+	}
+	
 
 }

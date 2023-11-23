@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="CombinedSuites" thread-count="8">
-	<listeners>
-	    <listener class-name="com.testing.amazon.listeners.AllureListener" />
-	</listeners>
+	
     
     <!-- Include other suites -->
     <suite-files>
-        <suite-file path="MyFIUSuite.xml" />
+        <!-- <suite-file path="MyFIUSuite.xml" /> -->
         <!-- <suite-file path="MyCompatibilitySuite.xml" /> -->
-        <!-- Add more suite files as needed -->
+        <suite-file path="MyDatabaseSuite.xml" />
     </suite-files>
 </suite>

@@ -1,25 +1,31 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="MyFIUSuite"  thread-count="8">
+<listeners>
+	    <listener class-name="com.testing.amazon.listeners.AllureListener" />
+	</listeners>
 
     <test name="FunctionalTests">
     	<parameter name="browser" value="chrome" />
+    	
+    	
         <classes>
             <class name="com.testing.amazon.tests.functional.SignUpTest" />
             <class name="com.testing.amazon.tests.functional.SignInTest" />
+            <class name="com.testing.amazon.tests.functional.SearchProductTest" />
             <!-- Add more functional test classes as needed -->
         </classes>
+        
     </test>
 
-    <!-- <test name="IntegrationTests">
+<!--     <test name="IntegrationTests">
         <parameter name="browser" value="chrome" />
         <classes>
-            <class name="com.yourcompany.tests.integration.ShoppingCartAndPaymentIntegrationTests" />
-            <class name="com.yourcompany.tests.integration.SignupSigninIntegrationTests" />
+            <class name="com.testing.amazon.tests.integeration.LoginToBuyIntegrationTest" />
             Add more integration test classes as needed
         </classes>
-    </test>
+    </test> -->
 
-    <test name="UITests">
+<!--     <test name="UITests">
         <parameter name="browser" value="chrome" />
         <classes>
             <class name="com.yourcompany.tests.ui.RegistrationUITests" />

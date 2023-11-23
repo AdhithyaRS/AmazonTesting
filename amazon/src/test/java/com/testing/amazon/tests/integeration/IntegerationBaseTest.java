@@ -1,19 +1,19 @@
-package com.testing.amazon.tests.functional;
+package com.testing.amazon.tests.integeration;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import com.testing.amazon.pageObjectModel.BasePage;
 import com.testing.amazon.pageObjectModel.PageOutline;
 import com.testing.amazon.tests.BaseTest;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.testng.annotations.AfterMethod;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.ITestResult;
 
-public class FunctionalBaseTest extends BaseTest{
+public class IntegerationBaseTest extends BaseTest{
 	public WebDriver driver;
 	public PageOutline page;
 
@@ -34,7 +34,7 @@ public class FunctionalBaseTest extends BaseTest{
       } else {
           System.out.println("no browser value out of scope");
       }
-      driver.get("https://www.amazon.com");
+      driver.get("https://www.amazon.in");
       try {
           Thread.sleep(6000);
       } catch (InterruptedException e) {
@@ -44,6 +44,19 @@ public class FunctionalBaseTest extends BaseTest{
       driver.manage().window().maximize();
       System.out.println(page.driver.getClass().getName());
   }
+  
+  
+//  //Method to capture screenshot using Selenium
+//  public byte[] captureScreenshot() {
+//      // Assuming driver is your WebDriver instance
+//      return basePage.getScreenShot();
+//  }
+//
+//  // Method to attach screenshot to Allure report
+//  @Attachment(value = "Intermidiate Screenshots", type = "image/png")
+//  public byte[] attachScreenshotToAllure(byte[] screenshot) {
+//      return screenshot;
+//  }
 
   @AfterMethod
   public void tearDownTest(ITestResult result) {
@@ -52,19 +65,9 @@ public class FunctionalBaseTest extends BaseTest{
 //          captureScreenshot(result.getMethod().getMethodName());
 //      }
 	  if (driver != null) {
+		  System.out.println("End!!");
           driver.quit();
       }
   }
-  
-  public boolean isPhoneNumber(String input) {
-
-	    return input.matches("\\d+");
-	}
-  
-//  @Attachment(value = "Page screenshot", type = "image/png")
-//  public byte[] captureScreenshot(String methodName) {
-//	  System.out.println("Taking Screen shot");
-//      return ((TakesScreenshot) this.driver).getScreenshotAs(OutputType.BYTES);
-//  }
 
 }

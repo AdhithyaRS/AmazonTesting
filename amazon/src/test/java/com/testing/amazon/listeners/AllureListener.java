@@ -2,15 +2,9 @@ package com.testing.amazon.listeners;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
-
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-
-import com.testing.amazon.pageObjectModel.BasePage;
-import com.testing.amazon.tests.functional.FunctionalBaseTest;
-
+import com.testing.amazon.tests.BaseTest;
 import customInterfaces.ParameterLabel;
 import io.qameta.allure.Attachment;
 
@@ -22,7 +16,7 @@ public class AllureListener implements ITestListener {
     public void onTestSuccess(ITestResult result) {
 		String successDetails = captureSuccessDetails(result);
         attachToReport("Test Success Details", successDetails);
-        captureScreenshot();
+        captureScreenshot("Success Screen Shots");
     }
 
     // Capture test success details
@@ -41,8 +35,9 @@ public class AllureListener implements ITestListener {
     @Override
     public void onTestFailure(ITestResult result) {
     	String failureDetails = captureFailureDetails(result);
+    	System.out.println("Test failure output/n"+failureDetails);
         attachToReport("Test Failure Details", failureDetails);
-        captureScreenshot();
+        captureScreenshot("Failure Screen Shots");
     }
 
     // Capture test failure details
@@ -57,10 +52,10 @@ public class AllureListener implements ITestListener {
         //System.out.println(details.toString());
         return details.toString();
     }
-    @Attachment(value = "Page screenshot", type = "image/png")
-    public byte[] captureScreenshot() {
+    @Attachment(value = "{attachmentName}", type = "image/png")
+    public byte[] captureScreenshot(String attachmentName) {
   	  System.out.println("Taking Screen shot");
-  	  byte[] picture= FunctionalBaseTest.basePage.getScreenShot();
+  	  byte[] picture= BaseTest.basePage.getScreenShot();
         return picture;
         //((TakesScreenshot) this.driver).getScreenshotAs(OutputType.BYTES);
     }
@@ -87,9 +82,4 @@ public class AllureListener implements ITestListener {
         return content;
     }
     
-//    @Attachment(value = "Page screenshot", type = "image/png")
-//	public byte[] saveScreenshotPNG() {
-//    	
-//		return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-//	}
 }

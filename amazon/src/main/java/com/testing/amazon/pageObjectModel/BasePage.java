@@ -1,6 +1,8 @@
 package com.testing.amazon.pageObjectModel;
 
 
+import java.util.Set;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
@@ -51,6 +53,7 @@ public class BasePage extends PageOutline{
 	public void waitForElementPresent(By locator) {
 		try {
 			wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+			wait.until(ExpectedConditions.elementToBeClickable(locator));
 		} catch (Exception e) {
 			System.out.println("some exception/error occurred while waiting for the element " + locator.toString());
 		}
@@ -93,6 +96,17 @@ public class BasePage extends PageOutline{
 	
 	public byte[] getScreenShot() {
 		return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+	}
+	
+	public String getCurrentWindow() {
+		return driver.getWindowHandle();
+	}
+	public Set<String> getAllWindows() {
+		return driver.getWindowHandles();
+	}
+	
+	public void switchWindow(String windowHandle) {
+		driver.switchTo().window(windowHandle);
 	}
 
 }
