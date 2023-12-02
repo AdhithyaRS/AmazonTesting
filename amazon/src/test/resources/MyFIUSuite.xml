@@ -17,13 +17,13 @@
         
     </test>
 
-<!--     <test name="IntegrationTests">
+     <test name="IntegrationTests">
         <parameter name="browser" value="chrome" />
         <classes>
             <class name="com.testing.amazon.tests.integeration.LoginToBuyIntegrationTest" />
-            Add more integration test classes as needed
+            <!-- Add more integration test classes as needed -->
         </classes>
-    </test> -->
+    </test>
 
 <!--     <test name="UITests">
         <parameter name="browser" value="chrome" />

@@ -64,8 +64,6 @@ public class SearchProductTest extends FunctionalBaseTest{
 		System.out.println("Checking the error");
 		products = page.getInstance(Products.class);
 		System.out.println(products==null?"true":"false");
-        // Navigate to the sign-up page or set up any preconditions specific to sign-up
-		
 		basePage = products;
     }
 

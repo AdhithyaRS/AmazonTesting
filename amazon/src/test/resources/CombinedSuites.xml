@@ -5,7 +5,7 @@
     
     <!-- Include other suites -->
     <suite-files>
-        <!-- <suite-file path="MyFIUSuite.xml" /> -->
+        <suite-file path="MyFIUSuite.xml" />
         <!-- <suite-file path="MyCompatibilitySuite.xml" /> -->
         <suite-file path="MyDatabaseSuite.xml" />
     </suite-files>

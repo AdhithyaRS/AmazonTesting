@@ -62,7 +62,7 @@ public class SignUpTest extends FunctionalBaseTest{
     public void setUpSignUpPage() {
 		signUpPage = page.getInstance(SignUpPage.class);
 		System.out.println("In setUpSignUpPage method: "+signUpPage==null);
-        // Navigate to the sign-up page or set up any preconditions specific to sign-up
+        // Navigate to the sign-up page
 		signUpPage.navigateToSignUp();
 		basePage = signUpPage;
     }

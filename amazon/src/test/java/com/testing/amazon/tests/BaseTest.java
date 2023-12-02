@@ -8,7 +8,6 @@ public class BaseTest {
 	
 	  //Method to capture screenshot using Selenium
 	  public byte[] captureScreenshot() {
-	      // Assuming driver is your WebDriver instance
 	      return basePage.getScreenShot();
 	  }
 

@@ -63,7 +63,6 @@ public class SignInTest extends FunctionalBaseTest{
 		System.out.println("Checking the error");
 		signInPage = page.getInstance(SignInPage.class);
 		System.out.println(signInPage==null?"true":"false");
-        // Navigate to the sign-up page or set up any preconditions specific to sign-up
 		signInPage.navigateToSignIn();
 		basePage = signInPage;
     }

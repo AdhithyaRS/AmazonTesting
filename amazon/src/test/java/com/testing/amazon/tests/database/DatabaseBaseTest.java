@@ -11,6 +11,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 import java.util.StringJoiner;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -35,12 +36,12 @@ public class DatabaseBaseTest {
     @AfterClass
     public static void tearDown() {
         if (connection != null) {
-        	try (Statement statement = connection.createStatement()) {
+        	try (Statement statement = connection.createStatement()) { 
                 // Drop tables in reverse order
         		System.out.println("Check the table manually before droping it");
-//        		Scanner sc = new Scanner(System.in);
-//        		sc.nextLine();
-//        		sc.close();
+        		Scanner sc = new Scanner(System.in);
+        		sc.nextLine();
+        		sc.close();
                 statement.executeUpdate("DROP TABLE IF EXISTS OrderDetails");
                 statement.executeUpdate("DROP TABLE IF EXISTS SalesTable");
                 statement.executeUpdate("DROP TABLE IF EXISTS OrderTable");
