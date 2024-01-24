@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testing.amazon.tests.functional.SignUpTest">
+      <class name="com.testing.amazon.tests.functional.SignInTest">
         <methods>
           <include name="tearDownTest"/>
           <include name="setUpBrowserTest"/>
-          <include name="setUpTestData"/>
-          <include name="setUpSignUpPage"/>
-          <include name="signUpWithEmptyCredTest"/>
+          <include name="signInWithInvalidCredTest"/>
+          <include name="setInTestData"/>
+          <include name="setUpSignInPage"/>
         </methods>
-      </class> <!-- com.testing.amazon.tests.functional.SignUpTest -->
+      </class> <!-- com.testing.amazon.tests.functional.SignInTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
