@@ -2,24 +2,18 @@ package com.testing.amazon.tests.functional;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
-
 import com.testing.amazon.pageObjectModel.BasePage;
 import com.testing.amazon.pageObjectModel.PageOutline;
-
+import com.testing.amazon.tests.BaseTest;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import io.qameta.allure.Attachment;
-
 import org.testng.annotations.AfterMethod;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 
-public class FunctionalBaseTest {
-	
+public class FunctionalBaseTest extends BaseTest{
 	public WebDriver driver;
 	public PageOutline page;
 
@@ -53,19 +47,24 @@ public class FunctionalBaseTest {
 
   @AfterMethod
   public void tearDownTest(ITestResult result) {
-	  if (result.getStatus() == ITestResult.FAILURE || result.getStatus() == ITestResult.SUCCESS ) {
-		  System.out.println("In tear down method");
-          captureScreenshot(result.getMethod().getMethodName());
-      }
+//	  if (result.getStatus() == ITestResult.FAILURE || result.getStatus() == ITestResult.SUCCESS ) {
+//		  System.out.println("In tear down method");
+//          captureScreenshot(result.getMethod().getMethodName());
+//      }
 	  if (driver != null) {
           driver.quit();
       }
   }
   
-  @Attachment(value = "Page screenshot", type = "image/png")
-  public byte[] captureScreenshot(String methodName) {
-	  System.out.println("Taking Screen shot");
-      return ((TakesScreenshot) this.driver).getScreenshotAs(OutputType.BYTES);
-  }
+  public boolean isPhoneNumber(String input) {
+
+	    return input.matches("\\d+");
+	}
+  
+//  @Attachment(value = "Page screenshot", type = "image/png")
+//  public byte[] captureScreenshot(String methodName) {
+//	  System.out.println("Taking Screen shot");
+//      return ((TakesScreenshot) this.driver).getScreenshotAs(OutputType.BYTES);
+//  }
 
 }

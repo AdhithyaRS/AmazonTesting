@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"519c3c6e96bae695038f4f5a8c971b69","name":"MyFIUSuite","statistic":{"failed":2,"broken":0,"skipped":0,"passed":19,"unknown":0,"total":21}},{"uid":"a0d2d136d186b1392f7c513c94fc3622","name":"MyDatabaseSuite","statistic":{"failed":0,"broken":0,"skipped":0,"passed":14,"unknown":0,"total":14}}]}

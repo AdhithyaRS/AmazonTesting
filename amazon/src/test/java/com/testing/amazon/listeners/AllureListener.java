@@ -2,10 +2,9 @@ package com.testing.amazon.listeners;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
-
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-
+import com.testing.amazon.tests.BaseTest;
 import customInterfaces.ParameterLabel;
 import io.qameta.allure.Attachment;
 
@@ -17,6 +16,7 @@ public class AllureListener implements ITestListener {
     public void onTestSuccess(ITestResult result) {
 		String successDetails = captureSuccessDetails(result);
         attachToReport("Test Success Details", successDetails);
+        captureScreenshot("Success Screen Shots");
     }
 
     // Capture test success details
@@ -28,13 +28,16 @@ public class AllureListener implements ITestListener {
         details.append("\nParameters:\n");
         details.append(captureParameters(result)).append("\n");
         System.out.println(details.toString());
+        
         return details.toString();
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
     	String failureDetails = captureFailureDetails(result);
+    	System.out.println("Test failure output/n"+failureDetails);
         attachToReport("Test Failure Details", failureDetails);
+        captureScreenshot("Failure Screen Shots");
     }
 
     // Capture test failure details
@@ -48,6 +51,13 @@ public class AllureListener implements ITestListener {
         details.append(captureParameters(result)).append("\n");
         //System.out.println(details.toString());
         return details.toString();
+    }
+    @Attachment(value = "{attachmentName}", type = "image/png")
+    public byte[] captureScreenshot(String attachmentName) {
+  	  System.out.println("Taking Screen shot");
+  	  byte[] picture= BaseTest.basePage.getScreenShot();
+        return picture;
+        //((TakesScreenshot) this.driver).getScreenshotAs(OutputType.BYTES);
     }
 
     public String captureParameters(ITestResult result) {
@@ -72,9 +82,4 @@ public class AllureListener implements ITestListener {
         return content;
     }
     
-//    @Attachment(value = "Page screenshot", type = "image/png")
-//	public byte[] saveScreenshotPNG() {
-//    	
-//		return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-//	}
 }

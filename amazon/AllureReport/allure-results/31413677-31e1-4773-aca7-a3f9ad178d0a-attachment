@@ -1,0 +1,12 @@
+Test Method: signUpWithInvalidPhoneNumberTest
+Test Description: Verify that the signUp process should not proceed to next step with invalid phone Number and also checking that proper error message displayed.
+Test Status: FAILED
+Failure Reason: Going to next step of signUp after entering invalid Mobile number. expected [Please enter a valid mobile phone number with area code.] but found [Amazon Phone Verification]
+
+Parameters:
+Username: Adhithya
+Phone number/Email-id: +91-8485465416531
+Password: 123456
+Re-enter Password: 123456
+methodName: signUpWithInvalidPhoneNumberTest
+

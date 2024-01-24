@@ -1,4 +1,4 @@
-﻿UserName,PhoneNumber,Password,,TestMethodName
+UserName,PhoneNumber,Password,,TestMethodName
 …,+15736484306,123456,123456,signUpWithInvalidUserNameTest
 123456,+15736484306,123456,123456,signUpWithInvalidUserNameTest
 Adhithya,+91-8485465416531,123456,123456,signUpWithInvalidPhoneNumberTest

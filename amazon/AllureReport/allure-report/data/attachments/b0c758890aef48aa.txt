@@ -1,0 +1,11 @@
+Test Method: signUpWithInvalidUserNameTest
+Test Description: Verify that the signUp process should not proceed to next step with invalid user name.
+Test Status: PASSED
+
+Parameters:
+Username: â€¦
+Phone number/Email-id: +15736484306
+Password: 123456
+Re-enter Password: 123456
+methodName: signUpWithInvalidUserNameTest
+

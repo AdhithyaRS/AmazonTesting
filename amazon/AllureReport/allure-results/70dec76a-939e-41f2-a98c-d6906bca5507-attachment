@@ -1,0 +1,11 @@
+Test Method: signUpWithInvalidEmailTest
+Test Description: Verify that the signUp process should not proceed to next step with invalid email-id and also checking that proper error message displayed.
+Test Status: PASSED
+
+Parameters:
+Username: Abinaya
+Phone number/Email-id: invalid@domain.
+Password: 123456
+Re-enter Password: 123456
+methodName: signUpWithInvalidEmailTest
+

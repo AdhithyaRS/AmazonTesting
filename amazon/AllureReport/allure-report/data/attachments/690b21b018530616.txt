@@ -1,0 +1,11 @@
+Test Method: SignInToOrderConfirmTest
+Test Description: Verify that search->add to cart->SignIn->Buy working successfully.
+Test Status: PASSED
+
+Parameters:
+Search Keyword: fiama body wash
+Confirm Brand in Search Result: B06ZY81GGQ
+Phone number/Email-id: toadhi1509@gmail.com
+password: Adhi@Adhi15
+methodName: SignInToOrderConfirmTest
+

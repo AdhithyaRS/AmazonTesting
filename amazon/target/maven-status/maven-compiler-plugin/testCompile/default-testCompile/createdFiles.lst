@@ -1,5 +1,12 @@
-com\testing\amazon\tests\functional\SignUpTest.class
 com\testing\amazon\listeners\AllureListener.class
 com\testing\amazon\tests\functional\FunctionalBaseTest.class
+com\testing\amazon\tests\functional\SearchProductTest.class
 customInterfaces\ParameterLabel.class
+com\testing\amazon\tests\database\CRUDTest.class
+com\testing\amazon\listeners\AllureListenerDB.class
+com\testing\amazon\tests\database\DatabaseBaseTest.class
+com\testing\amazon\tests\integeration\IntegerationBaseTest.class
 com\testing\amazon\tests\functional\SignInTest.class
+com\testing\amazon\tests\BaseTest.class
+com\testing\amazon\tests\functional\SignUpTest.class
+com\testing\amazon\tests\integeration\LoginToBuyIntegrationTest.class

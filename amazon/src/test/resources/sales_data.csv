@@ -1,0 +1,11 @@
+orderId,customerId,region
+1,1,India
+2,2,Berlin
+3,3,Australia
+4,4,North America
+5,5,Japan
+6,1,Berlin
+7,2,Australia
+8,3,North America
+9,4,Japan
+10,5,India

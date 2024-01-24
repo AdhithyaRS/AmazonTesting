@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MyDatabaseSuite"  thread-count="8">
+<listeners>
+	    <listener class-name="com.testing.amazon.listeners.AllureListenerDB" />
+	</listeners>
+
+    <test name="FunctionalTests">
+    	
+    	
+        <classes>
+            <class name="com.testing.amazon.tests.database.CRUDTest" />
+            <!-- Add more functional test classes as needed -->
+        </classes>
+        
+    </test>
+    </suite>
