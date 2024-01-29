@@ -5,7 +5,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -13,7 +12,6 @@ import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Stack;
-import java.util.Vector;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -96,8 +94,6 @@ public class SearchProductTest extends FunctionalBaseTest{
   @Test(dataProvider = "productSearchData",  enabled=true, description = "Verify that relavant search results shown for a product search.")
   public void searchByCategoryTest(@ParameterLabel("Search Keyword") String searchFor,@ParameterLabel("Search In Category") String searchIn,@ParameterLabel("Confirm Brand in Search Result") String confirmSearch,@ParameterLabel("methodName") String testMethodName) {
 	  try {
-		  Queue<Integer> queue = new LinkedList<Integer>();
-		  PriorityQueue<int[][]> Pqueue = new PriorityQueue<>((a, b) -> b[0][1] - a[0][1]);
 		  int[] arr = new int[10];
 		  Arrays.sort(arr);
 		  
